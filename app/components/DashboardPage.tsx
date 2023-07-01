@@ -73,7 +73,7 @@ const DashboardPage: FC = ({}) => {
         messages: [
           {
             role: "user",
-            content: `I want you to act as a personal coach that can make a custom fitness and meal plan. I will give you some information (height, age, weigth, goal, injuries, calendar etc.), and you will return the weekly fitness and meal plan to follow. Give detail about each session with the exercises to do, the duration of the session, the muscle groups to focus and other specific advise you want to add
+            content: `I want you to act as a personal coach that can make a custom fitness and meal plan. I will give you some information (height, age, weigth, goal, injuries, calendar etc.), and you will return the weekly fitness and meal plan to follow. Give detail about each session with the exercises to do, the duration of the session, the muscle groups to focus
           1. Height: ${message.height}cm 
           2. Age: ${message.age} years
           3. Weight: ${message.weight}kg
@@ -82,7 +82,23 @@ const DashboardPage: FC = ({}) => {
           6. Objective: ${message.objective}
           7. Injuries: ${message.injuries}
           8. Availability: ${message.availability}
-          9. Equipment: ${message.equipment}`,
+          9. Equipment: ${message.equipment}
+          Please follow the following format:
+          Fitness Plan:
+          Day X: (training objective)
+           - Duration:
+           - Muscle Groups to Focus:
+           - Exercises:
+            (list the exercises)
+          
+          Meal Plan:
+          Meal X (meal type)
+           - Meal 1
+           - Meal 2
+           - Meal 3
+
+          Don't provide any additional information 
+          `,
           },
         ],
       }),
