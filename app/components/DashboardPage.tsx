@@ -97,7 +97,7 @@ const DashboardPage: FC = ({}) => {
            - Meal 2
            - Meal 3
 
-          Don't provide any additional information 
+          Don't provide any additional information or note 
           `,
           },
         ],
