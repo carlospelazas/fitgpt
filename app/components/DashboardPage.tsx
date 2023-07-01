@@ -105,7 +105,7 @@ const DashboardPage: FC = ({}) => {
         onSubmit={handleSubmit(onSubmit)}
         className="mx-20 pt-16 pb-8 bg-slate-100 rounded-xl"
       >
-        <div className="grid grid-cols-3 gap-y-10">
+        <div className="grid xl:grid-cols-3 gap-y-10 grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-row items-center space-x-4 justify-center">
             <label className="font-semibold">Age:</label>
             <input

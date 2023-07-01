@@ -1,14 +1,12 @@
 import Image from "next/image";
 import bgImg from "@/media/Features-that-Could-Make-Your-Fitness-App-Popular-Like-Fitbit.png";
-import { Configuration, OpenAIApi } from "openai";
-import { useState } from "react";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <div className="w-full">
-        <div className="flex flex-row items-center justify-between space-x-9 sm:mx-72 mt-20">
+        <div className="flex flex-row items-center justify-center space-x-9 lg:mx-60 mt-20">
           <div className="ml-20">
             <p className="text-7xl font-bold leading-relaxed">
               Get the physique you always wanted.
